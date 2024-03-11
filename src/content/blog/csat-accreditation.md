@@ -7,11 +7,11 @@ tags:
   - Case
 seo:
   image:
-    src: '/post-1.jpg'
+    src: '/csat-logo.svg'
 created: 09 Mar 2024, 2:48
 modified: 09 Mar 2024, 4:22
 ---
-![](/csat-logo.svg)
+![](/dante-astro/csat-logo.svg)
 
 
 CaspianSat specializes in designing and operating satellite communication solutions. The company achieve their goals by using high-efficiency satellite, as well as long-range and high-throughput radio systems, combining them on the base of advanced network technologies.

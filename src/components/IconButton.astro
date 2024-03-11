@@ -12,7 +12,7 @@ const buttonClasses = 'inline-flex items-center justify-center p-2 text-main bg-
 
 {
     href ? (
-        <a href={href} class:list={[buttonClasses, className]} {...rest}>
+        <a href={'/dante-astro' + href} class:list={[buttonClasses, className]} {...rest}>
             <slot />
         </a>
     ) : (
