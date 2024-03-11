@@ -9,7 +9,7 @@ export type Link = {
     href: string;
     image?: Image;
 
-    
+
 };
 
 export type Hero = {
@@ -33,6 +33,7 @@ export type SiteConfig = {
     image?: Image;
     headerNavLinks?: Link[];
     footerNavLinks?: Link[];
+    primaryNavLinks?: Link[];
     socialLinks?: Link[];
     hero?: Hero;
     subscribe?: Subscribe;
@@ -48,23 +49,41 @@ const siteConfig: SiteConfig = {
         src: '/FT.jpg',
         alt: 'Dante - Astro.js and Tailwind CSS theme'
     },
-    headerNavLinks: [
+    // headerNavLinks: [
+    //     {
+    //         text: 'Home',
+    //         href: '/'
+    //     },
+    //     {
+    //         text: 'Projects',
+    //         href: '/projects'
+    //     },
+    //     {
+    //         text: 'Blog',
+    //         href: '/blog'
+    //     },
+    //     {
+    //         text: 'Tags',
+    //         href: '/tags'
+    //     }
+    // ],
+    primaryNavLinks: [
         {
             text: 'Home',
             href: '/'
-        },
-        {
-            text: 'Projects',
-            href: '/projects'
         },
         {
             text: 'Blog',
             href: '/blog'
         },
         {
-            text: 'Tags',
-            href: '/tags'
-        }
+            text: 'About',
+            href: '/about'
+        },
+        {
+            text: 'Contact',
+            href: '/contact'
+        },
     ],
     footerNavLinks: [
         {
@@ -85,13 +104,13 @@ const siteConfig: SiteConfig = {
         // }
     ],
     socialLinks: [
-        {   
-           
+        {
+
             text: 'Linkedin',
             href: 'https://www.linkedin.com/in/farhat-aghayev/'
-            },
-        
-        
+        },
+
+
         {
             text: 'Instagram',
             href: 'https://instagram.com/'
