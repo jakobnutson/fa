@@ -36,7 +36,7 @@ const { class: className } = Astro.props;
         <ThemeToggle />
     </div>
 </nav> -->
-<nav class="relative h-320 w-320">
+<nav class="relative w-320 pt-20">
     <div class="absolute top-8 left-10 h-16 w-16">
         <ThemeToggle />
     </div>
@@ -50,16 +50,16 @@ const { class: className } = Astro.props;
                         aria-expanded="false"
                         aria-controls="menu-items"
                     >
-                        <span class="menu-toggle-icon w-9 h-9 relative bg-red-400 ring-2 ring-purple-500 ring-offset-2 ring-offset-slate-0 dark:ring-offset-slate-900 rounded-full" />
+                        <span class="menu-toggle-icon w-9 h-9 relative bg-blue-400 ring-2 ring-purple-500 ring-offset-2 ring-offset-slate-0 dark:ring-offset-slate-900 rounded-full" />
                     </button>
                     <ul
                         id="menu-items"
-                        class="menu absolute -top-3 -right-3 px-8 pt-16 pb-10 bg-white/75 border border-white/40 z-10 sm:px-12 sm:pt-20 sm:pb-16"
+                        class="menu absolute -top-3 -right-3 px-8 pt-16 pb-10 bg-black/25 border border-white/40 z-10 sm:px-12 sm:pt-20 sm:pb-16"
                     >
                         {primaryNavLinks.map((link) => (
                             <li class="mb-1 border-b border-slate-200/70">
                                 <HeaderNavLink
-                                    class="block pr-6 py-1 text-lg text-slate-700 font-bold sm:text-xl relative transition duration-300 hover:text-slate-500"
+                                    class="block pr-6 py-1 text-lg text-blue-600 font-bold sm:text-xl relative transition duration-300 hover:text-slate-500"
                                     href={link.href}
                                 >
                                     {link.text}
