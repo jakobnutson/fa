@@ -1,4 +1,4 @@
-i---
+eei---
 import NavLink from './NavLink.astro';
 import ThemeToggle from './ThemeToggle.astro';
 import siteConfig from '../data/site-config';
@@ -36,11 +36,9 @@ const { class: className } = Astro.props;
         <ThemeToggle />
     </div>
 </nav> -->
-
+<ThemeToggle />
 <nav class="relative pt-5 w-320">
-    <div class="absolute top-18 left-10 h-16 w-16">
-        <ThemeToggle />
-    </div>
+    
     <div class="absolute top-10 right-10 h-16 w-16">
         {
             primaryNavLinks.length > 0 && (
