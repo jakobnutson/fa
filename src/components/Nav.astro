@@ -46,12 +46,13 @@ const { class: className } = Astro.props;
             primaryNavLinks.length > 0 && (
                 <nav class=" relative">
                     <button
-                        class="menu-toggle  inline-flex items-center justify-center bg-primary text-white rounded-full relative z-20 transition-shadow duration-300 hover:shadow-button"
+                        class="menu-toggle inline-flex items-center justify-center bg-primary text-white rounded-full relative z-20 transition-shadow duration-300 hover:shadow-button"
                         aria-label="Open Menu"
                         aria-expanded="false"
                         aria-controls="menu-items"
                     >
-                        <span class="menu-toggle-icon w-9 h-9 relative bg-blue-400 ring-2 ring-purple-500 ring-offset-2 ring-offset-slate-0 dark:ring-offset-slate-900 rounded-full" />
+                        <span class="menu-toggle-icon w-9 h-9 relative bg-blue-400 ring-2 ring-purple-500 hover:bg-green-400 ring-offset-2 ring-offset-slate-0 dark:ring-offset-slate-900 rounded-full" />
+                        <span class="" />
                     </button>
                     <ul
                         id="menu-items"
