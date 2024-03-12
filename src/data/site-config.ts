@@ -52,7 +52,7 @@ const siteConfig: SiteConfig = {
     // headerNavLinks: [
     //     {
     //         text: 'Home',
-    //         href: '/'
+    //         href: '/aghayev'
     //     },
     //     {
     //         text: 'Projects',
