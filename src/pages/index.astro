@@ -17,16 +17,18 @@ const featuredProjects = projects.filter(({ data }) => data.isFeatured);
 ---
 
 <BaseLayout description={siteConfig.description} image={siteConfig.image}>
-    
-    
     <Hero />
-    <NavIcon/>
+    <NavIcon />
     {
         featuredProjects?.length > 0 && (
             <div class="mt-12 text-lg font-semibold dark:text-zinc-100 text-zinc-900">
                 <h2 class="mb-12 text-xl font-serif italic sm:mb-16 sm:text-2xl">Projects</h2>
                 {featuredProjects.map((project) => (
-                    <ProjectPreview project={project} class="mt-6 grid-cols-2 gap-5 border dark:border-zinc-700 bg-white dark:bg-zinc-800 rounded-md p-2" headingLevel="h3" />
+                    <ProjectPreview
+                        project={project}
+                        class="mt-6 grid-cols-2 gap-5 border dark:border-zinc-700 bg-white dark:bg-zinc-800 rounded-md p-2"
+                        headingLevel="h3"
+                    />
                 ))}
                 <div class="mt-12 sm:mt-16">
                     <Button href="/projects">View All Projects</Button>
@@ -34,7 +36,7 @@ const featuredProjects = projects.filter(({ data }) => data.isFeatured);
             </div>
         )
     }
-    <!-- {
+    {
         featuredPosts?.length > 0 && (
             <div class="mb-16 sm:mb-24">
                 <h2 class="mb-12 text-xl font-serif italic sm:mb-16 sm:text-2xl">Writing</h2>
@@ -46,5 +48,5 @@ const featuredProjects = projects.filter(({ data }) => data.isFeatured);
                 </div>
             </div>
         )
-    } -->
+    }
 </BaseLayout>
