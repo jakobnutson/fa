@@ -36,10 +36,10 @@ const { class: className } = Astro.props;
         <ThemeToggle />
     </div>
 </nav> -->
+<div class="absolute top-12 left-10 h-16 w-16">
+    <ThemeToggle />
+</div>
 <nav class="relative h-320 w-320">
-    <div class="absolute top-8 left-10 h-16 w-16">
-        <ThemeToggle />
-    </div>
     <div class="absolute top-10 right-10 h-16 w-16">
         {
             primaryNavLinks.length > 0 && (
