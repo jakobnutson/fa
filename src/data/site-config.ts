@@ -46,57 +46,57 @@ const siteConfig: SiteConfig = {
     subtitle: '',
     description: 'Description',
     image: {
-        src: '/aghayev/FT.jpg',
+        src: '/Aghayev/FT.jpg',
         alt: 'Dante - Astro.js and Tailwind CSS theme'
     },
     // headerNavLinks: [
     //     {
     //         text: 'Home',
-    //         href: '/aghayev'
+    //         href: '/Aghayev'
     //     },
     //     {
     //         text: 'Projects',
-    //         href: '/projects'
+    //         href: '/Aghayev/projects'
     //     },
     //     {
     //         text: 'Blog',
-    //         href: '/blog'
+    //         href: '/Aghayev/blog'
     //     },
     //     {
     //         text: 'Tags',
-    //         href: '/tags'
+    //         href: '/Aghayev/tags'
     //     }
     // ],
     primaryNavLinks: [
         {
             text: 'Home',
-            href: '/'
+            href: '/Aghayev'
         },
         {
             text: 'Blog',
-            href: '/blog'
+            href: '/Aghayev/blog'
         },
         {
             text: 'About',
-            href: '/about'
+            href: '/Aghayev/about'
         },
         {
             text: 'Contact',
-            href: '/contact'
+            href: '/Aghayev/contact'
         },
     ],
     footerNavLinks: [
         {
             text: 'About',
-            href: '/about'
+            href: '/Aghayev/about'
         },
         {
             text: 'Contact',
-            href: '/contact'
+            href: '/Aghayev/contact'
         },
         {
             text: 'Terms',
-            href: '/terms'
+            href: '/Aghayev/terms'
         },
         // {
         //     text: 'Download theme',
@@ -124,13 +124,13 @@ const siteConfig: SiteConfig = {
         title: 'Hi There & Welcome to My Corner of the Web!',
         text: "I'm Farhat Aghayev GRC Practitioner, ITIL 4 Managing Professional, Prince2, MCSEI'm a self-motivated, smart working, and career-oriented IT professional with more than 10 years experience, specializing in IT Service Management, GRC and Microsoft platforms with an interest in IT Management and GRC directions. ",
         image: {
-            src: '/FT.jpg',
+            src: '/Aghayev/FT.jpg',
             alt: 'A person sitting at a desk in front of a computer'
         },
         actions: [
             {
                 text: 'Get in Touch',
-                href: '/contact'
+                href: '/Aghayev/contact'
             }
         ]
     },
