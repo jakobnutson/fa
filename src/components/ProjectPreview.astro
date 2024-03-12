@@ -9,7 +9,13 @@ const { title, description } = project.data;
 const TitleTag = headingLevel;
 ---
 
-<a class:list={['flex justify-between items-start gap-8 group', className]} href={`/projects/${project.slug}/`}>
+<a
+    class:list={[
+        'flex justify-between items-start auto-cols-auto p-6 bg-white ring-1 ring-slate-900/5 shadow-lg space-y-3 hover:bg-sky-500 hover:ring-sky-500',
+        className
+    ]}
+    href={`/Aghayev/projects/${project.slug}/`}
+>
     <div class="grow">
         <TitleTag
             class="text-xl leading-tight font-serif font-medium group-hover:underline group-hover:decoration-dashed group-hover:underline-offset-4 group-hover:decoration-1 sm:text-2xl"
