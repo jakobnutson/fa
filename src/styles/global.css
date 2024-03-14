@@ -4,16 +4,16 @@
 
 @layer base {
     :root {
-        --color-text-main: 23 23 23; /* #171717 */
-        --color-bg-main: 242 241 236; /* #F2F1EC */
-        --color-bg-muted: 234 233 225; /* #EAE9E1 */
-        --color-border-main: 23 23 23; /* #171717 */
+        --color-text-main: 68 68 68; /* #444444 */
+        --color-bg-main:  	229	238	243; /* #e5eef3 */
+        --color-bg-muted: 205 205 197; /* #cdccc5 */
+        --color-border-main: 12 61 95; /* #0c3d5f */
     }
     html.dark {
-        --color-text-main: 242 241 236; /* #F2F1EC */
-        --color-bg-main: 23 23 23; /* #171717 */
-        --color-bg-muted: 36 36 36; /* #242424 */
-        --color-border-main: 242 241 236; /* #F2F1EC */
+        --color-text-main: 197 197 193; /* #c5c5c1 */
+        --color-bg-main: 30 30 30; /* #1e1e1e */
+        --color-bg-muted: 23 62	5; /* #242424 */
+        --color-border-main: 197 197 193; /* #c5c5c1 */
     }
     .hidden {
         display: none;

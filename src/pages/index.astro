@@ -26,12 +26,30 @@ const featuredProjects = projects.filter(({ data }) => data.isFeatured);
                 {featuredProjects.map((project) => (
                     <ProjectPreview
                         project={project}
-                        class="mt-6 grid-cols-2 gap-5 border dark:border-zinc-700 bg-white dark:bg-zinc-800 rounded-md p-2"
+                        class="mt-5 grid-cols-2 gap-5 border dark:border-zinc-700 bg-sky-100 dark:bg-zinc-800 rounded-md p-2"
                         headingLevel="h3"
                     />
                 ))}
                 <div class="mt-12 sm:mt-16">
                     <Button href="/projects">View All Projects</Button>
+                </div>
+            </div>
+        )
+    }
+
+    {
+        featuredPosts?.length > 0 && (
+            <div class="mt-12 mb-16 sm:mb-24">
+                <h2 class="mb-12 text-xl font-serif italic sm:mb-16 sm:text-2xl">Writing</h2>
+                {featuredPosts.map((post) => (
+                    <PostPreview
+                        post={post}
+                        class="mt-5 grid-cols-2 gap-5 border dark:border-zinc-700 bg-sky-100 dark:bg-zinc-800 rounded-md p-2"
+                        headingLevel="h3"
+                    />
+                ))}
+                <div class="mt-12 sm:mt-16">
+                    <Button href="/blog">View All Posts</Button>
                 </div>
             </div>
         )

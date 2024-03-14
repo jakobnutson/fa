@@ -21,10 +21,14 @@ const portfolio = page.data;
 <BaseLayout
     title="Portfolio"
     description="Explore a diverse portfolio showcasing my passion and expertise"
-    image={{ src: 'fa/dante-preview.jpg', alt: 'The preview of the site' }}
+    image={{ src: '/dante-preview.jpg', alt: 'The preview of the site' }}
     showHeader={false}
 >
     <h1 class="mb-12 text-2xl leading-tight font-serif italic sm:mb-16 sm:text-4xl">Projects</h1>
-    {portfolio.map((project) => <ProjectPreview project={project} class="mt-6 grid-cols-2 gap-5 border dark:border-zinc-700 bg-white dark:bg-zinc-800 rounded-md p-2" />)}
+    {
+        portfolio.map((project) => (
+            <ProjectPreview project={project} class="mt-6 grid-cols-2 gap-5 border dark:border-zinc-700 bg-white dark:bg-zinc-800 rounded-md p-2" />
+        ))
+    }
     <Pagination page={page} class="my-16 sm:my-24" />
 </BaseLayout>
