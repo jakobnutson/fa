@@ -6,26 +6,28 @@ const primaryNavLinks = siteConfig.primaryNavLinks || [];
 import { Astronav, MenuItems, MenuIcon, Dropdown, DropdownItems } from 'astro-navbar';
 ---
 
-<section class="flex justify-between items-center container">
+<section class="flex justify-between items-center relative h-100 w-100">
     <TT />
 
     <Astronav>
-        <div class="flex p-4 backdrop-filter backdrop-blur-sm bg-opacity-30 z-10 w-full justify-between">
+        <div class="flex p-4 backdrop-filter backdrop-blur-30 z-10 w-full justify-between">
             <a>Your Logo</a>
-            <div class="block lg:hidden">
-                <MenuIcon class="w-5 h-5" />
-            </div>
         </div>
-        <MenuItems class="lg:flex hidden">
-            <ul class="flex flex-row rounded px-1 lg:flex-row lg:gap-5 bg-gray-300 bg-opacity-30 text-black-400">
-                <li class="inline-flex px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-300">
-                    <a href="/fa/">Home</a>
-                </li>
-                <li class="inline-flex px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-300"><a href="/fa/projects">Projects</a></li>
-                <li class="inline-flex px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-300"><a href="/fa/blog">Blog</a></li>
-                <li class="inline-flex px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-300"><a href="/fa/about">About</a></li>
-                <li></li>
-            </ul>
+        <div class="block lg:hidden">
+            <MenuIcon class="w-7 h-7" />
+        </div>
+        <MenuItems class="absolute lg:flex hidden pl-11 top-1 right-8">
+            <div class="inset-0 border border-sky-500 mx-2 mt-2 rounded">
+                <ul class="flex flex-col rounded px-1 md:flex-row lg:gap-5 bg-black bg-opacity-80 text-orange-400">
+                    <li class="inline-flex px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-300">
+                        <a href="/fa/">Home</a>
+                    </li>
+                    <li class="inline-flex px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-300"><a href="/fa/projects">Projects</a></li>
+                    <li class="inline-flex px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-300"><a href="/fa/blog">Blog</a></li>
+                    <li class="inline-flex px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-300"><a href="/fa/about">About</a></li>
+                    <li></li>
+                </ul>
+            </div>
         </MenuItems>
     </Astronav>
 </section>
