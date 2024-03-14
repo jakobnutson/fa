@@ -1,8 +1,10 @@
 ---
+import HeaderNavLink from './HeaderNavLink.astro';
 import { marked } from 'marked';
 import Button from './Button.astro';
 import siteConfig from '../data/site-config';
 
+const primaryNavLinks = siteConfig.primaryNavLinks || [];
 const hero = siteConfig.hero;
 ---
 

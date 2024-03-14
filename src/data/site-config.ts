@@ -46,7 +46,7 @@ const siteConfig: SiteConfig = {
     subtitle: '',
     description: 'Description',
     image: {
-        src: '/Aghayev/FT.jpg',
+        src: '/fa/FT.jpg',
         alt: 'Dante - Astro.js and Tailwind CSS theme'
     },
     // headerNavLinks: [
@@ -70,33 +70,33 @@ const siteConfig: SiteConfig = {
     primaryNavLinks: [
         {
             text: 'Home',
-            href: '/Aghayev'
+            href: '/fa'
         },
         {
             text: 'Blog',
-            href: '/Aghayev/blog'
+            href: '/fa/blog'
         },
         {
             text: 'About',
-            href: '/Aghayev/about'
+            href: '/fa/about'
         },
         {
             text: 'Contact',
-            href: '/Aghayev/contact'
+            href: '/fa/contact'
         },
     ],
     footerNavLinks: [
         {
             text: 'About',
-            href: '/Aghayev/about'
+            href: '/fa/about'
         },
         {
             text: 'Contact',
-            href: '/Aghayev/contact'
+            href: '/fa/contact'
         },
         {
             text: 'Terms',
-            href: '/Aghayev/terms'
+            href: '/fa/terms'
         },
         // {
         //     text: 'Download theme',
@@ -124,13 +124,13 @@ const siteConfig: SiteConfig = {
         title: 'Hi There & Welcome to My Corner of the Web!',
         text: "I'm Farhat Aghayev GRC Practitioner, ITIL 4 Managing Professional, Prince2, MCSEI'm a self-motivated, smart working, and career-oriented IT professional with more than 10 years experience, specializing in IT Service Management, GRC and Microsoft platforms with an interest in IT Management and GRC directions. ",
         image: {
-            src: '/Aghayev/FT.jpg',
+            src: '/fa/FT.jpg',
             alt: 'A person sitting at a desk in front of a computer'
         },
         actions: [
             {
                 text: 'Get in Touch',
-                href: '/Aghayev/contact'
+                href: '/fa/contact'
             }
         ]
     },
