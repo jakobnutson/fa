@@ -5,6 +5,7 @@ import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
 import Nav from '../components/Nav.astro';
 import Card from '../components/Card.astro';
+import TG from '../components/ThemeToggle.astro';
 
 export type Props = HeadProps & { showHeader?: boolean };
 
@@ -14,7 +15,6 @@ const { showHeader = true, ...head } = Astro.props;
 <!doctype html>
 <html lang="en" class="antialiased break-words">
     <head>
-        <Nav />
         <BaseHead {...head} />
         <script>
             if (localStorage.theme === 'dark') {
@@ -26,13 +26,13 @@ const { showHeader = true, ...head } = Astro.props;
     </head>
 
     <body class="bg-main text-main">
-        <div class="flex flex-col min-h-screen px-4 md:px-8">
-            {showHeader && <Header />}
+        <Header />
+        <main class="flex flex-col min-h-screen px-4 md:px-8">
             <main class="grow w-full max-w-3xl mx-auto">
                 <slot />
             </main>
 
             <Footer />
-        </div>
+        </main>
     </body>
 </html>

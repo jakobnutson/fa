@@ -1,18 +1,37 @@
 ---
 import siteConfig from '../data/site-config';
+import TT from '../components/ThemeToggle.astro';
+import NavLink from '../components/NavLink.astro';
+const primaryNavLinks = siteConfig.primaryNavLinks || [];
+import { Astronav, MenuItems, MenuIcon, Dropdown, DropdownItems } from 'astro-navbar';
 ---
 
-<header class="w-full max-w-3xl mx-auto mb-12 sm:mb-16 mt-5">
-    {
-        siteConfig.logo && siteConfig.logo?.src ? (
-            <a href="/">
-                <img src={siteConfig.logo.src} alt={siteConfig.logo.alt || ''} class="max-h-12" />
-            </a>
-        ) : (
-            <a class="font-serif text-2xl leading-tight font-medium text-theme-foreground sm:text-4xl" href="/Aghayev">
-                {siteConfig.title}
-            </a>
-        )
+<section class="flex justify-between items-center container">
+    <TT />
+
+    <Astronav>
+        <div class="flex p-4 backdrop-filter backdrop-blur-sm bg-opacity-30 z-10 w-full justify-between">
+            <a>Your Logo</a>
+            <div class="block lg:hidden">
+                <MenuIcon class="w-5 h-5" />
+            </div>
+        </div>
+        <MenuItems class="hidden lg:fex">
+            <ul class="sticky flex flex-col rounded px-1 lg:flex-row lg:gap-5 bg-gray-300 bg-opacity-30 text-black-400">
+                <li class="inline-flex px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-300">
+                    <a href="/Aghayev/">Home</a>
+                </li>
+                <li class="inline-flex px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-300"><a href="/Aghayev/projects">Projects</a></li>
+                <li class="inline-flex px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-300"><a href="/Aghayev/blog">Blog</a></li>
+                <li class="inline-flex px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-300"><a href="/Aghayev/about">About</a></li>
+                <li></li>
+            </ul>
+        </MenuItems>
+    </Astronav>
+</section>
+
+<style>
+    .hidden {
+        display: none;
     }
-    {siteConfig.subtitle && <p class="text-sm leading-tight mt-1">{siteConfig.subtitle}</p>}
-</header>
+</style>
